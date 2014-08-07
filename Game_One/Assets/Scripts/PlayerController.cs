@@ -12,10 +12,25 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		//Declare force
 		Vector3 force;
-		force = new Vector3(10f, 0, 0);
+//		force = new Vector3(1000f, 0, 0);
 		//Instatiate force to a new instace of Vector3
 
-		rigidbody.AddForce (force);
+		force = new Vector3(0, 0, 0);
+
+		string UserInput = Input.GetKey;
+		Debug.Log (UserInput);
+
+		if (Input.GetKey (KeyCode.RightArrow)) { //Run when right arrow pressed
+						force.x += 1000f;
+				} else if (Input.GetKey (KeyCode.LeftArrow)) {
+						force.x -= 1000f;				
+				} else if (Input.GetKey (KeyCode.UpArrow)) {
+						force.y += 1000f;		
+				}	
+
+			force = force * Time.deltaTime;
+			rigidbody.AddForce (force);
+		//Force moves object with physics
 
 	}
 }
