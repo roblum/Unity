@@ -1,4 +1,4 @@
 Unity
 =====
 
-Creating game from Unity Workshop @ Microsoft
+Creating 3D game from Unity Workshop @ Microsoft
