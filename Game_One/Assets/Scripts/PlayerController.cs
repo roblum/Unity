@@ -22,9 +22,13 @@ public class PlayerController : MonoBehaviour {
 				} else if (Input.GetKey (KeyCode.LeftArrow)) {
 						force.x -= 1000f;				
 				} else if (Input.GetKey (KeyCode.UpArrow)) {
-						force.y += 1000f;		
+						force.z += 1000f;		
 				} else if (Input.GetKey (KeyCode.DownArrow)) {
-						force.y -= 1000f;
+						force.z -= 1000f;
+				} 
+
+				if (Input.GetKeyDown(KeyCode.Space)) {
+						force.y += 1000f;
 				}
 
 				force = force * Time.deltaTime;
