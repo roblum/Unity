@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\HoopController.cs" />
      <Compile Include="Assets\Scripts\PlaneTilt.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
   </ItemGroup>
