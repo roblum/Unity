@@ -10,6 +10,8 @@ public class PlaneTilt : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		Quaternion delta = Quaternion.Euler (new Vector3 (0, 0, 10f) * Time.deltaTime);
+
+		rigidbody.MoveRotation (rigidbody.rotation * delta);
 	}
 }
